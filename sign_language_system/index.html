@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CLS - Conversor de Língua de Sinais</title>
+    <script src="js/three.min.js"></script>
+    <script src="js/OrbitControls.js"></script>
+    <script src="js/GLTFLoader.js"></script>
+	
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <style> 
+		
+        a {
+            color: #f00;
+        }
+        
+        .ac {
+            /* prevent dat-gui from being selected */
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        .no-pointer-events {
+            pointer-events: none;
+        }
+        
+        .control-disabled {
+            color: #888;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+
+<img src="img/logo_icon.png" alt=""/>
+<p> Lingua Signans </p>
+    
+
+    <script src="js/teste00.js">
+    </script>    
+
+
+<div class ="upperbar" id="area">
+        <!-- <label for="Speech Recognition"> <b> Speech Recognition  </label> --> <input type="text" maxlength="300" name="" id="speechToText" placeholder="Digite aqui para traduzir..."> 
+		<input type="image" id="speechToText" src="img/microphone_icon.png" onclick="record()" />
+        <b> <h5> <input type="image" id="btnSubmit" src="img/play_icon.png" /></h5></b>
+
+    </div>	
+
+</body>
+
+</html>
